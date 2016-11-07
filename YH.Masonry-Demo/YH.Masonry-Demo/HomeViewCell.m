@@ -128,6 +128,7 @@
         
         _contentLabelH = h;  //内容距离底部下划线10的距离
     }
+    NSLog(@"%lf",_contentLabelH);
     return _contentLabelH;
 }
 @end

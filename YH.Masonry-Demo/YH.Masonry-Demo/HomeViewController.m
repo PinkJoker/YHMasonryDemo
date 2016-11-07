@@ -114,22 +114,22 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //第一种方法
-        HomeModel *homeModel = self.arrModel[indexPath.row];
-        return homeModel.cellHeight;
-//    //另一种实现方法
-//    id h = [self.cellHeightCache objectForKey:@(indexPath.row)];
-//    if(h){
-//        NSLog(@"%@",h);
-//        return [h floatValue];
-//        
-//    }
-//    //取出模型
-//    HomeModel *homeModel=self.arrModel[indexPath.row];
-//    HomeViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homeIndentifier];
-//    //行高放入缓存
-//    CGFloat  cellH = [cell rowHeightWithCellModel:homeModel];
-//    [self.cellHeightCache setObject:@(cellH) forKey:@(indexPath.row)];
-//    return cellH;
+//        HomeModel *homeModel = self.arrModel[indexPath.row];
+//        return homeModel.cellHeight;
+    //另一种实现方法
+    id h = [self.cellHeightCache objectForKey:@(indexPath.row)];
+    if(h){
+        NSLog(@"%@",h);
+        return [h floatValue];
+        
+    }
+    //取出模型
+    HomeModel *homeModel=self.arrModel[indexPath.row];
+    HomeViewCell *cell = [tableView dequeueReusableCellWithIdentifier:homeIndentifier];
+    //行高放入缓存
+    CGFloat  cellH = [cell rowHeightWithCellModel:homeModel];
+    [self.cellHeightCache setObject:@(cellH) forKey:@(indexPath.row)];
+    return cellH;
     
 }
 
