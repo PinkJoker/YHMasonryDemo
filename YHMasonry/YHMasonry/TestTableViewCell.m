@@ -73,6 +73,7 @@
     .rightSpaceToView(self.contentView,10)
     .autoHeightRatio(0);
     [self setupAutoHeightWithBottomView:self.label bottomMargin:10];
+    
 //    self.littleLabel.text = modal.discribe;
 }
 

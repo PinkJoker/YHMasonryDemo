@@ -156,7 +156,7 @@
 				TargetAttributes = {
 					375BF2261DC42E6100C21E73 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = AXVYRMSNQ8;
+						DevelopmentTeam = F8VKS9TP58;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -369,7 +369,7 @@
 			baseConfigurationReference = 7A22EDA0AF4252B7DD6C4254 /* Pods-YHMasonry.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AXVYRMSNQ8;
+				DEVELOPMENT_TEAM = F8VKS9TP58;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/XingShanKeJi/Desktop/YHMasonry/YHMasonry/PrefixHeader.pch;
@@ -392,7 +392,7 @@
 			baseConfigurationReference = 9CFD10EFA6343E0CD4C456C3 /* Pods-YHMasonry.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AXVYRMSNQ8;
+				DEVELOPMENT_TEAM = F8VKS9TP58;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/XingShanKeJi/Desktop/YHMasonry/YHMasonry/PrefixHeader.pch;
