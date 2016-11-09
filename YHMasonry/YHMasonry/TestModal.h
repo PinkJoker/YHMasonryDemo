@@ -1,0 +1,17 @@
+//
+//  TestModal.h
+//  YHMasonry
+//
+//  Created by 我叫MT on 16/10/29.
+//  Copyright © 2016年 Pinksnow. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface TestModal : NSObject
+@property(nonatomic, copy)NSString *title;
+@property(nonatomic, copy)NSString *discribe;
+//单元格的高度
+@property (nonatomic,assign)CGFloat cellHeight;
+
+@end

@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  YHMasonry
+//
+//  Created by 我叫MT on 16/10/29.
+//  Copyright © 2016年 Pinksnow. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "Header.h"
+#import <Masonry/Masonry.h>
+#import <SDAutoLayout/UIView+SDAutoLayout.h>
+#import <SDAutoLayout/UITableView+SDAutoTableViewCellHeight.h>
+#import <FDFullscreenPopGesture/FDFullscreenPopGesture/UINavigationController+FDFullscreenPopGesture.h>
+#import "SDWebImage/SDWebImage/SDImageCache.h"
+//#import 
+#define kWidth     [UIScreen mainScreen].bounds.size.width
+#define kHeight   [UIScreen mainScreen].bounds.size.height
+#define weakObj(obj,R)    __weak __typeof(obj)R = obj;
+//#define WeakObj(o) try{}@finally{} __weak typeof(o) o##Weak = o;
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,23 @@
+PODS:
+  - FDFullscreenPopGesture (1.1)
+  - Masonry (1.0.1)
+  - SDAutoLayout (2.1.2)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+
+DEPENDENCIES:
+  - FDFullscreenPopGesture (~> 1.1)
+  - Masonry (~> 1.0.1)
+  - SDAutoLayout (~> 2.1.2)
+  - SDWebImage (~> 3.8.1)
+
+SPEC CHECKSUMS:
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+  SDAutoLayout: 4910758003bbb043003700915b00f53fbc2bf512
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+
+PODFILE CHECKSUM: 45b9196950db5ee7ab8fb4f6401361f7ab1c37f7
+
+COCOAPODS: 1.0.1
