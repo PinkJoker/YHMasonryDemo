@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3703A54E1DE92C450002A89D /* homeModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3703A54D1DE92C450002A89D /* homeModal.m */; };
 		375BF22C1DC42E6100C21E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BF22B1DC42E6100C21E73 /* main.m */; };
 		375BF22F1DC42E6100C21E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BF22E1DC42E6100C21E73 /* AppDelegate.m */; };
 		375BF2321DC42E6100C21E73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375BF2311DC42E6100C21E73 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		0D1BEFABCA8939D2BAED2015 /* Pods_YHMasonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHMasonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3703A54C1DE92C450002A89D /* homeModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = homeModal.h; sourceTree = "<group>"; };
+		3703A54D1DE92C450002A89D /* homeModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = homeModal.m; sourceTree = "<group>"; };
 		375BF2271DC42E6100C21E73 /* YHMasonry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHMasonry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		375BF22B1DC42E6100C21E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		375BF22D1DC42E6100C21E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				375BF2491DC4414500C21E73 /* TestTableViewCell.m */,
 				375BF24D1DC47D8C00C21E73 /* TestModal.h */,
 				375BF24E1DC47D8C00C21E73 /* TestModal.m */,
+				3703A54C1DE92C450002A89D /* homeModal.h */,
+				3703A54D1DE92C450002A89D /* homeModal.m */,
 				375BF24B1DC44BC200C21E73 /* PrefixHeader.pch */,
 				375BF24C1DC44E6000C21E73 /* Header.h */,
 				375BF2331DC42E6100C21E73 /* Main.storyboard */,
@@ -245,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3703A54E1DE92C450002A89D /* homeModal.m in Sources */,
 				375BF2321DC42E6100C21E73 /* ViewController.m in Sources */,
 				375BF24A1DC4414500C21E73 /* TestTableViewCell.m in Sources */,
 				375BF22F1DC42E6100C21E73 /* AppDelegate.m in Sources */,
@@ -372,7 +378,7 @@
 				DEVELOPMENT_TEAM = F8VKS9TP58;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/XingShanKeJi/Desktop/YHMasonry/YHMasonry/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/XingShanKeJi/Desktop/YH/YHMasonryDemo/YHMasonry/YHMasonry/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
 				INFOPLIST_FILE = YHMasonry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -395,7 +401,7 @@
 				DEVELOPMENT_TEAM = F8VKS9TP58;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/XingShanKeJi/Desktop/YHMasonry/YHMasonry/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/XingShanKeJi/Desktop/YH/YHMasonryDemo/YHMasonry/YHMasonry/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
 				INFOPLIST_FILE = YHMasonry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

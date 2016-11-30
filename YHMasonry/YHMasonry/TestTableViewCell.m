@@ -55,27 +55,15 @@
 {
     [super layoutSubviews];
     weakObj(self, weakSelf);
-    [self.iconImage  mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(kLeft);
-        make.width.mas_equalTo(kWidth *0.25);
-        make.top.mas_equalTo(10);
-        make.height.mas_equalTo(weakSelf.iconImage.mas_width).multipliedBy(0.6);
-    }];
+//    [self.iconImage  mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.mas_equalTo(kLeft);
+//        make.width.mas_equalTo(kWidth *0.25);
+//        make.top.mas_equalTo(10);
+//        make.height.mas_equalTo(weakSelf.iconImage.mas_width).multipliedBy(0.6);
+//    }];
 }
 
--(void)setModal:(TestModal *)modal
-{
-    _modal = modal;
-    self.label.text = modal.title;
-    self.label.sd_layout
-    .topSpaceToView(self.iconImage,10)
-    .leftSpaceToView(self.contentView, 10)
-    .rightSpaceToView(self.contentView,10)
-    .autoHeightRatio(0);
-    [self setupAutoHeightWithBottomView:self.label bottomMargin:10];
-    
-//    self.littleLabel.text = modal.discribe;
-}
+
 
 //-(CGFloat)heightForRow:(TestModal *)modal
 //{
@@ -101,6 +89,29 @@
 //    return _titleHeight;
 //
 //}
+
+#pragma mark --------------------------SDAutoLayout
+-(void)setModal:(TestModal *)modal
+{
+    _modal = modal;
+    self.label.text = modal.title;
+    self.iconImage.sd_layout
+    .leftSpaceToView(self.contentView,10)
+    .rightSpaceToView(self.contentView,10)
+    .topSpaceToView(self.contentView,10)
+    .heightIs(130);
+    self.label.sd_layout
+    .topSpaceToView(self.iconImage,10)
+    .leftSpaceToView(self.contentView, 10)
+    .rightSpaceToView(self.contentView,10)
+    .autoHeightRatio(0);
+    [self setupAutoHeightWithBottomView:self.label bottomMargin:10];
+    
+}
+
+
+
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

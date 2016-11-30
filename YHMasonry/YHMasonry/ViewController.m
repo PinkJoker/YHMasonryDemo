@@ -10,8 +10,7 @@
 #import "kDataSource.h"
 #import "TestModal.h"
 #import "TestTableViewCell.h"
-//#define KWidth     [UIScreen mainScreen].bounds.size.width
-//#import ""
+
 static NSString *const testcell = @"testcell";
 @interface ViewController ()<UITableViewDelegate>
 @property(nonatomic, strong)UITableView *tableView;
@@ -78,15 +77,22 @@ static NSString *const testcell = @"testcell";
 #pragma mark -- delegate
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
-    TestModal *modal = _arrModel[indexPath.row];
- //   NSLog(@"%@",modal);
     
-    NSLog(@"%f",[self.tableView cellHeightForIndexPath:indexPath model:modal keyPath:@"modal" cellClass:[TestTableViewCell class] contentViewWidth:375]);
-    return [self.tableView cellHeightForIndexPath:indexPath model:modal keyPath:@"modal" cellClass:[TestTableViewCell class] contentViewWidth:375]+kWidth *0.25 *0.6+10;
-  //  return [tableView cellHeightForIndexPath:indexPath cellContentViewWidth:375 tableView:self.tableView];
+    
+    
+
+#pragma mark--SDAutoLayout
+    TestModal *modal = _arrModel[indexPath.row];
+    //第一种方式
+    return [self.tableView cellHeightForIndexPath:indexPath model:modal keyPath:@"modal" cellClass:[TestTableViewCell class] contentViewWidth:[self cellWidth]];
+    //第二种方式
+ //   return [tableView cellHeightForIndexPath:indexPath cellContentViewWidth:[self cellWidth] tableView:self.tableView];
 }
 
+
+-(CGFloat)cellWidth{
+    return [UIScreen mainScreen].bounds.size.width;
+}
 -(NSMutableDictionary *)cellHeightCache
 {
     if(!_cellHeightCache){
